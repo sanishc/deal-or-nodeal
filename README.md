@@ -2,7 +2,7 @@
 A Web Based Game Inspired from Popular Television Game Show
 
 - [About](#about)
-- [GamePlay](#game-play)
+- [GamePlay](#GamePlay)
 
 ## About
 
