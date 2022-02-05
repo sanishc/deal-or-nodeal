@@ -1,5 +1,6 @@
 {
   "name": "deal-or-nodeal",
+  "homepage": "deal-or-nodeal",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
