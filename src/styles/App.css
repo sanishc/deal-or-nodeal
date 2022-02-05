@@ -1,0 +1,56 @@
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+.logo {
+  font-family: "Acme", sans-serif;
+}
+
+.scrollbarNone {
+  scrollbar-width: none;
+}
+.scrollbarNone::-webkit-scrollbar {
+  display: none;
+}
+
+.gameGrid {
+  display: grid;
+  overflow-x: hidden;
+  justify-content: center;
+  grid-template-areas: "boxes" "moneyTreeLeft" "moneyTreeRight";
+}
+
+.moneyTreeLeft {
+  grid-area: moneyTreeLeft;
+}
+
+.moneyTreeRight {
+  grid-area: moneyTreeRight;
+}
+
+.boxes {
+  grid-area: boxes;
+}
+
+@media (min-width: 640px) {
+  .gameGrid {
+    grid-template-areas: "boxes" "moneyTreeLeft moneyTreeRight";
+  }
+}
+
+@media (min-width: 1024px) {
+  .gameGrid {
+    grid-template-areas: "moneyTreeLeft boxes moneyTreeRight";
+  }
+}
